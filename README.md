@@ -42,6 +42,8 @@ By default, **assets_scanner** generate the `r.dart` in the `lib/`, the class na
 
 * `ignoreComment`: Indicate the comments need to be generated or not. Note that the you can't preview the images assets if `ignoreComment` is `true`.
 
+* `namePattern`: The pattern should be matched for assets to be handled. If the pattern is kept with null, all assets will be handled.
+
 Here the example of the `assets_scanner_options.yaml` file:
 ```yaml
 # assets_scanner_options.yaml
@@ -49,6 +51,7 @@ Here the example of the `assets_scanner_options.yaml` file:
 path: "lib/src"
 className: "MainAssets"
 ignoreComment: true
+namePattern: '^icon.*'
 ```
 
 ## License
